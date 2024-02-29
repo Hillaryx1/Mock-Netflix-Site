@@ -1,0 +1,99 @@
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.header button {
+    position: absolute;
+    bottom: 200px;
+    left: 60%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 22px 50px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    filter: brightness(1.2);
+}
+
+.header input[type="email"] { 
+    position: absolute;
+    bottom: 200px;
+    left: 35%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    width: 400px;
+    padding: 22px 20px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.header a {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #e50914;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    position: absolute;
+    bottom: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    text-align: center;
+}
+
+.header p {
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    z-index: 999;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
